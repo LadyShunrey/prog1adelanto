@@ -19,7 +19,7 @@ public class clase2_ejemplo3 {
 		pes = (float) 75.5;
 
 		// imprime dos textos concatenados
-		System.out.println("El valor de " + "peso es: ");
+		System.out.println("El valor  de " + "peso es: ");
 		
 		//imprime el valor de peso convertido en texto
 		System.out.println(peso);
