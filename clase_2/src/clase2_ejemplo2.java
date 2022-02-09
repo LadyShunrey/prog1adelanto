@@ -1,5 +1,5 @@
 
-public class clase2_ejemplo2 {
+public class Clase2_ejemplo2 {
 
 	public static void main(String[] args) {
 		//antes de usar variables hay que declararlas

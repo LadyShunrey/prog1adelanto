@@ -1,5 +1,5 @@
 
-public class clase2_ejemplo3 {
+public class Clase2_ejemplo3 {
 
 	public static void main(String[] args) {
 		// ejemplo de declaración de variables y asignación de valores

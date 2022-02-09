@@ -1,0 +1,18 @@
+
+public class clase2_ejemplo9 {
+
+	public static void main(String[] args) {
+		
+		// El String es un tipo especial para almacenar texto
+		//si solo se necesita un caracter deberia utilizar char
+		String texto;
+		texto = "una frase corta";
+		
+		//para leer textos desde consola no necesita convertirlo a String
+		texto = entrada.readLine();
+		
+		System.out.println(texto);
+		System.out.println("El texto es " + texto);
+	}
+
+}

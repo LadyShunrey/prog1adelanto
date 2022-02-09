@@ -1,6 +1,6 @@
 
 
-public class clase_1_ejercicio_2 {
+public class Clase_1_ejercicio_2 {
 
 	public static void main(String[] args) {
 		System.out.println("Hola Mundo"); 

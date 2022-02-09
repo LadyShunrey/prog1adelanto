@@ -1,0 +1,37 @@
+// Lo que hay que hacer: 
+
+//	1. Escribir un programa que solicite y luego muestre por consola los valores
+//necesarios para dibujar un círculo y un triángulo. Hay que determinar en cada
+//caso que constantes (que no se cargan por consola) y variables con tipos son
+//necesarias declarar.
+
+//	2. Escribir un programa que solicite los siguientes datos de una persona (nombre,
+//apellido, edad, altura, ocupación, dirección) y los imprima por pantalla.
+
+//	3. Escribir un programa que pida que se ingresen datos necesarios para emitir una
+//factura por la compra de dos artículos de librería (tipo factura, número, nombre
+//cliente, producto 1, importe 1, producto 2, importe 2, importe total). Como
+//salida debe imprimir por pantalla la factura en un formato similar al siguiente
+//(utilizar literales):
+	
+
+public class segunda_parte {
+
+	public static void main(String[] args) {
+		
+		double radio;
+		final double numeroPi = 3.14159265358979323846;
+		
+		double perimetroCirculo = 2 . numeroPi . radio;
+		
+		System.out.println("Vamos a dibujar un círculo!! Para eso necesitamos que nos proponga un valor para su radio es" + perimetroCirculo);
+		
+		//tengo que pedirle al usuario un radio
+		//la maquina tiene que hacer 2.pi.radio
+		// variable del radio, variable fija pi, variable de la cuenta
+		//tiene que mostrar el resultado
+		
+
+	}
+
+}
