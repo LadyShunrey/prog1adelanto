@@ -27,6 +27,7 @@ public class Clase3_ejemplo7 {
 		System.out.println("el primero es multiplo de 3 y 5 :" + resultado);
 		}
 
+		
 		catch (Exception exc){
 		System.out.println(exc);
 		}
