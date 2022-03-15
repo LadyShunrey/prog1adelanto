@@ -29,7 +29,7 @@ public class Clase4_Ejemplo5 {
 			}
 			else{
 				System.out.println("El numero es : " + numero);
-			}
+			} 
 			
 		}
 		
