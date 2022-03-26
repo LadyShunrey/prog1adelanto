@@ -29,7 +29,7 @@ public class Practico3_PrimeraParte_Ejercicio2 {
 			}
 			
 			else if((numero1%2)==0 && (numero2%2)==0){
-				System.out.println("B! Porque numero1 y numero2 son múltiplos de 2");
+				System.out.println("B! Porque ambos numeros son múltiplos de 2");
 			}
 			
 			else{
