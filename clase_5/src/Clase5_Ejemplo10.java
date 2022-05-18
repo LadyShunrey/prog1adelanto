@@ -20,14 +20,14 @@ public class Clase5_Ejemplo10{
 			System.out.println("El número ingresado es: " + numeroIngresado);
 			
 			while((numeroIngresado>MIN) && (numeroIngresado<MAX)){
-				do{
+	
+				if(numeroIngresado<numeroMenor){
 					numeroMenor = numeroIngresado;
-					System.out.println("El nuevo número menor es: " + numeroMenor);
-					System.out.println("Ingrese un entero entre "+MIN+" y "+MAX+": ");
-					numeroIngresado = Integer.valueOf(entrada.readLine());
-					System.out.println("El número ingresado es: " + numeroIngresado);
-					
-				}while(numeroIngresado>numeroMenor);
+				}
+				System.out.println("El nuevo número menor es: " + numeroMenor);					
+				System.out.println("Ingrese un entero entre "+MIN+" y "+MAX+": ");
+				numeroIngresado = Integer.valueOf(entrada.readLine());
+				System.out.println("El número ingresado es: " + numeroIngresado);
 								
 			}
 			
