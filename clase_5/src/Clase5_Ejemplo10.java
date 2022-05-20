@@ -1,4 +1,4 @@
-/*Hacer un programa que mientras que el usuario cargue un numero entero entre 0 y 1000 (no incluidos),
+ /*Hacer un programa que mientras que el usuario cargue un numero entero entre 0 y 1000 (no incluidos),
 guarde el menor de los numeros ingresados. Al finalizar el ciclo imprima el menor por pantalla
 */
 
