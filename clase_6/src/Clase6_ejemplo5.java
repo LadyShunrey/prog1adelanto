@@ -20,7 +20,7 @@ public class Clase6_ejemplo5 {
 			resultadoSuma+= numeroASumar;
 		}
 		
-		promedio = resultadoSuma/(MAX-MIN+1); /*en este caso podríamos poner solo MAX*/
+		promedio = resultadoSuma/(MAX-MIN+1); /*en este caso podríamos poner solo MAX pero si despues no arranca de 1 se puede editar*/
 		return promedio;
 	}
 	
