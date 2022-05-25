@@ -8,16 +8,14 @@ public class Clase6_ejemplo6 {
 	public static final int CONDICION = 0;
 	public static final int MAX = 10;
 	public static final int MIN = 1;
+	public static final int VALOR = 10;
 	public static void main(String[] args) {		
-		int numeroIngresado;
-		numeroIngresado = ingresar_numero();
+		int numeroIngresado = ingresar_numero();
 		while(numeroIngresado > CONDICION){
-			//imprimir tabla de multiplicar de 10 de ese numero
-			int multiplicador = multiplicador();
-			System.out.println(numeroIngresado + " * " + multiplicador + " = " + (numeroIngresado * multiplicador));
+			tabla_del_valor();
 			numeroIngresado = ingresar_numero();
 		}		
-		//imprimir la tabla	
+		tabla_del_valor();
 	}
 	public static int ingresar_numero(){
 		int numeroIngresado;
@@ -30,13 +28,14 @@ public class Clase6_ejemplo6 {
 		catch(Exception exc){
 			System.out.println(exc);
 			numeroIngresado = -1;
-			System.out.println("El valor es inválido así que ahora el numero ingresado es: " + numeroIngresado);
+			System.out.println("El valor es inválido así que ahora el número ingresado es: " + numeroIngresado);
 		}		
 		return numeroIngresado;
 	}	
-	public static int multiplicador(){
+	public static void tabla_del_valor(){
+		System.out.println("La tabla del " + VALOR + " es así: ");
 		for(int multiplicador = MIN; multiplicador <= MAX; multiplicador++){
-			return multiplicador;
+			System.out.println(VALOR + " * " + multiplicador + " = " + (VALOR*multiplicador));
 		}
 	}
 }
