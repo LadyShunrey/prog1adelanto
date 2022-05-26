@@ -4,7 +4,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Clase7_ejemplo1 {
+public class Clase7_ejemplo1bis {
 	
 	public static final int MAX = 5;
 	
