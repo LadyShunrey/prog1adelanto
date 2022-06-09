@@ -32,9 +32,8 @@ public class Clase7_ejemplo5 {
 	}
 	public static void corrimiento_derecha(int [] arr, int laPosicionIngresada){
 		int indice = MAX-1; //partimos del final del arreglo
-		while(indice>laPosicionIngresada){
+		while(indice>laPosicionIngresada){ //esto va a correr mientras el numero en el que me pare sea MAYOR al numero que quiero patear a la derecha
 			arr[indice] = arr[indice-1]; //me paaro en el último valor del arreglo y le asigno el valor de la posicion anterior 
-			//hago -1 y lo copio lo de indice menos-1
 			indice--; //nos movemos una posicion a la izquierda
 		}
 	}
