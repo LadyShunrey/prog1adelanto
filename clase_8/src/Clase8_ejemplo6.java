@@ -11,8 +11,7 @@ public class Clase8_ejemplo6 {
 	public static final int MAXVALOR = 10;
 	public static final int MINVALOR = 1;
 	public static void main(String[] args) {
-		int filaIngresada;
-		int columnaIngresada;
+		int filaIngresada, columnaIngresada;
 		//declarar matriz
 		int [][] matriz = new int [MAXFILA][MAXCOLUMNA];
 		BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
@@ -27,8 +26,13 @@ public class Clase8_ejemplo6 {
 			//pedir numero columna
 			System.out.println("Ingrese una columna");
 			columnaIngresada = Integer.valueOf(entrada.readLine());
-			//correr a derecha hasta esa posicion
-			correr_a_derecha(matriz, filaIngresada, columnaIngresada);
+			//correr a derecha hasta esa posicion si existe
+			if((filaIngresada>=0) && (filaIngresada<MAXFILA) && (columnaIngresada>=0) && (columnaIngresada<MAXCOLUMNA)){
+				correr_a_derecha(matriz, filaIngresada, columnaIngresada);
+			}
+			else{
+				System.out.println("El valor de fila o columna ingresado no es válido");
+			}
 			//imprimir matriz corrida			
 			imprimir_matriz_int(matriz);
 		}
