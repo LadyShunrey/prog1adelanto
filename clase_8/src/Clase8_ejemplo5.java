@@ -1,4 +1,3 @@
-import java.util.Random;
 
 /*Hacer un programa que dado una matriz de enteros de tamano 4*5 que se
 encuentra precargada, encuentre la posicion fila,columna de un
