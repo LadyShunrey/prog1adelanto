@@ -3,7 +3,7 @@ enteros de tamaño 4*5 que se encuentra precargada, solicite al usuario un
 numero entero y una fila, y elimine la primer ocurrencia de numero en la
 fila indicada (un número igual) si existe.*/
 
-/*cómo hago para que me borre una ocurrencia que está en MAXCOLUMNA-1???*/
+/*cómo hago para que me borre una ocurrencia que está en MAXCOLUMNA-1??? la mando un if que lo reemplace por cero*/
 
 //librerías
 import java.util.Random;
@@ -58,8 +58,15 @@ public class Practico8_ejercicio8{
 		while((columna<MAXCOLUMNA) && (encontreUno==false)){
 			//si valor = numero
 			if	(matriz[filaIngresada][columna] == numeroIngresado){
-				//correr a izquierda
-				correr_a_izquierda(matriz, filaIngresada, columna);
+				//si de casualidad el número a eliminar está en la posición max-1
+				if (columna==MAXCOLUMNA-1){
+					//la unica manera es borrarlo pisandolo con el anterior porque sino no lo va a borrar
+					matriz[filaIngresada][columna] = matriz[filaIngresada][columna-1]; 
+				}
+				else{
+					//correr a izquierda
+					correr_a_izquierda(matriz, filaIngresada, columna);
+				}
 				//encontre = true
 				encontreUno=true;
 			}
