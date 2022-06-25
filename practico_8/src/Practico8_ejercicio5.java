@@ -19,11 +19,12 @@ public class Practico8_ejercicio5{
 		//catch
 	}
 	//método eliminar ocurrencia hacer con while
-		//iterar filas while
-			//iterar columnas while
+		//hago un boolean false
+		//iterar filas while mientras false
+			//iterar columnas while mientras false
 				//si encuentro el número
 					//corro a izquierda
-					//cambio condicion true del while para que corte
+					//cambio condicion a true del while para que corte
 		//si condicion igual false imprimo que no existe
 	
 	//método correr a izquierda
