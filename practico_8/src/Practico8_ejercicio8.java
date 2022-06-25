@@ -3,6 +3,8 @@ enteros de tamaño 4*5 que se encuentra precargada, solicite al usuario un
 numero entero y una fila, y elimine la primer ocurrencia de numero en la
 fila indicada (un número igual) si existe.*/
 
+/*cómo hago para que me borre una ocurrencia que está en MAXCOLUMNA-1???*/
+
 //librerías
 import java.util.Random;
 import java.io.BufferedReader;
