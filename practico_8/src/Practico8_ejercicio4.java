@@ -43,8 +43,10 @@ public class Practico8_ejercicio4{
 				que primero corra y después inserte, o puedo hacer dos métodos uno que primero corra y otro que después inserte*/
 				System.out.println("Hacemos el corrimiento a derecha");
 				correr_a_derecha(matriz, filaIngresada, columnaIngresada);
+				imprimir_la_matriz(matriz);
 				System.out.println("Insertamos el número");
 				insertar_numero_en_matriz(matriz, numeroIngresado, filaIngresada, columnaIngresada);
+				imprimir_la_matriz(matriz);
 			}
 		}
 		//catch
@@ -59,14 +61,12 @@ public class Practico8_ejercicio4{
 			//hago matriz en fila ingresada columna se vuelve columna-1
 			matriz[filaIngresada][columna] = matriz[filaIngresada][columna-1];
 		}
-		imprimir_la_matriz(matriz);
 	}
 	 
 	//metodo insertar
 	public static void insertar_numero_en_matriz(int [][] matriz, int numeroIngresado, int filaIngresada, int columnaIngresada){
 		//me paro en filaingresada columnaingresada se vuelve numeroingresado
 		matriz [filaIngresada][columnaIngresada] = numeroIngresado;
-		imprimir_la_matriz(matriz);
 	}
 	 
 	//método cargar
