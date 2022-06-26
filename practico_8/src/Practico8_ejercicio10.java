@@ -32,10 +32,13 @@ public class Practico8_ejercicio10{
 			System.out.println("Ingrese una posición en la fila: ");
 			columnaIngresada = Integer.valueOf(entrada.readLine());
 			inicioSecuencia = obtener_inicio_secuencia(matriz, filaIngresada, columnaIngresada);
-			System.out.println(inicioSecuencia);
-			//int posicion final = obtener fin secuencia();
-			//si posicion final e inicial != de MAX
-				//entonces imprimir
+			finSecuencia = obtener_fin_secuencia(matriz, filaIngresada, inicioSecuencia);
+			if ((inicioSecuencia!= MAXCOLUMNA) && (finSecuencia!=MAXCOLUMNA)){
+				System.out.println("en la fila "+filaIngresada+ " el inicio de la secuencia está en la posición " + inicioSecuencia + " y el final de la secuencia está en " + finSecuencia);
+			}
+			else{
+				System.out.println("No hay ninguna secuencia en esas posiciones");
+			}
 		}
 		catch(Exception exc){
 			System.out.println(exc);
@@ -45,24 +48,39 @@ public class Practico8_ejercicio10{
 	public static int obtener_inicio_secuencia(int [][] matriz, int filaIngresada, int columnaIngresada){
 		int posicion = MAXCOLUMNA;
 		boolean corte = false;
-		//si caigo en un cero
 		if (matriz[filaIngresada][columnaIngresada] == 0){
-			//iterar hacia adelante hasta el primer número mientras bool=false
-			while (corte==false && columnaIngresada<MAXCOLUMNA){
-				//cuando encuentro un número
+			while ((corte==false) && (columnaIngresada<MAXCOLUMNA)){
 				if(matriz[filaIngresada][columnaIngresada] != 0){
-					//variable posicion se vuelve columna
 					posicion = columnaIngresada;
-					//bool se vuelve true
 					corte = true;
 				}
 				columnaIngresada++;
 			}
 		}
-		//si caigo en un numero
-			//iterar hacia atrás hasta un cero mientras que bool=false
-				//variable posicion se vuelve el valor de la columna anterior (+1)
-				//bool se vuelve true
+		if(matriz[filaIngresada][columnaIngresada] != 0){
+			while ((corte==false) &&(columnaIngresada>-1)){
+				if (matriz[filaIngresada][columnaIngresada-1] == 0){
+					posicion = columnaIngresada;
+					corte = true;
+				}
+				columnaIngresada--;
+			}
+		}
+		return posicion;
+	}
+	
+	public static int obtener_fin_secuencia(int [][]matriz, int filaIngresada, int inicioSecuencia){
+		int posicion = MAXCOLUMNA;
+		boolean corte = false;
+		while ((corte==false) && (inicioSecuencia<MAXCOLUMNA)){
+			if(matriz[filaIngresada][inicioSecuencia] != 0){
+				if(matriz[filaIngresada][inicioSecuencia+1] == 0){
+					posicion = inicioSecuencia;
+					corte = true;
+				}
+			}
+			inicioSecuencia++;
+		}
 		return posicion;
 	}
 	
