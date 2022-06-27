@@ -25,7 +25,42 @@ public class Practico8_ejercicio14{
 		cargar_arreglo_aleatorio_secuencias_char(arreglo); /*ésto debería tener una "secuencia patrón"*/
 		System.out.println("El arreglo: ");
 		imprimir_el_arreglo(arreglo);
+		//eliminar ocurrencia de patrón(matriz, arreglo)
 	}
+	
+	//eliminar ocurrencia de patrón(char[][]matriz, char[]arreglo)
+		//int posicionInicialPatron
+		//int posicionFinalPatron
+		//int sizePatron=0
+		//int posicionInicialMatriz
+		//int posicionFinalMatriz
+		//iterar el arreglo con while
+			//si estoy en un número
+				//sizePatron+=1;
+				//si antes tuve un cero
+					//guardar posicion inicial
+				//si después tengo un cero
+					//guardar posicion final
+		//iterar la matriz con while
+			//si estoy en un número == valor de arreglo en pos inicial
+				//posicionInicialMatriz = columna
+				//while matriz[columna] == arreglo[posInicial]
+					//si posInicial == posFinal
+						//posicionFinalMatriz = columna
+						//borrar_ocurrencia(matriz, fila, posicionInicialMatriz, posicionFinalMatriz, sizePatrón);
+					//columna++
+					//posInicial++
+			//columna++
+	//}
+			
+	//public static void borrar_ocurrencia(char[][]matriz, int fila, int posicionInicialMatriz, int posicionFinalMatriz, int sizePatron){
+		//int cantidadDeCorridas =0;
+		//while (cantidadDeCorridas<sizePatron){
+			//for (int columna = posicionInicialMatriz; columna<posicionFinalMatriz; columna++){
+				//matriz[fila][columna]=matriz[fila][columna+1]
+			//}
+		//}
+	//}
 	
 	public static void cargar_matriz_secuencias_char(char[][]matriz){
 		for (int fila = 0; fila < MAXFILA; fila++){
