@@ -17,12 +17,12 @@ public class Practico8_ejercicio14{
 	public static final int MAXCOLUMNA = 20;
 	public static final double PROBABILIDAD_LETRA = 0.4;
 	public static void main (String []args){
-		char [] arreglo = new char [MAXCOLUMNA];
+		char [] arreglo = new char [MAXCOLUMNA]; /*Cómo puede tener tamaño igual a las columnas de la matriz si sólo tiene el patrón?*/
 		char [][]matriz = new char [MAXFILA][MAXCOLUMNA];
 		cargar_matriz_secuencias_char(matriz);
 		System.out.println("La matriz: ");
 		imprimir_la_matriz(matriz);
-		cargar_arreglo_aleatorio_secuencias_char(arreglo);
+		cargar_arreglo_aleatorio_secuencias_char(arreglo); /*ésto debería tener una "secuencia patrón"*/
 		System.out.println("El arreglo: ");
 		imprimir_el_arreglo(arreglo);
 	}
