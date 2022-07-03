@@ -38,7 +38,7 @@ public class Parcial_de_practica2 {
 	
 	public static void reemplazar_en_A_con_B(char[][]matrizA, char[][]matrizB, int fila){
 		int inicioSecuenciaRepetidaB;
-		int cuantasVecesEstaLaSecuenciaAenB = retornar_en_cuantas_secuencias_se_encuentra (matrizA[fila], matrizB[fila], inicioSecuenciaAEncontrar);
+		int cuantasVecesEstaLaSecuenciaAenB = retornar_en_cuantas_secuencias_se_encuentra (matrizA[fila], matrizB[fila]);
 		int columna = 0, contadorDeSecuencias = 0, inicioSecuenciaA = 0, finSecuenciaB = 0;
 		//para cada columna
 		while(columna<MAXCOL){
